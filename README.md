@@ -872,6 +872,16 @@ The Amazon EKS worker nodes are deployed in public subnets for simplicity.
 In a production environment, worker nodes are typically deployed in private subnets with controlled outbound internet access through a NAT Gateway.
 
 ---
+### Security Enhancements
+
+To further strengthen container security and align with production best practices, the following improvements are planned:
+
+- Run application containers as a non-root user instead of the default root user.
+- Create a dedicated application user and group within the Docker image.
+- Apply the principle of least privilege by granting only the required permissions.
+- Continue using lightweight base images to minimize the attack surface.
+
+---
 
 ### Single Environment Configuration
 
