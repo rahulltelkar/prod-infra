@@ -1,0 +1,12 @@
+terraform {
+  # Terraform CLI version
+  required_version = "~> 1.15"
+
+  # Required providers
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.0"
+    }
+  }
+}
